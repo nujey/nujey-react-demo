@@ -11,9 +11,42 @@ import Lists from './componets/lists'
 import Blogs from './componets/keys'
 import NameForm from './componets/forms'
 import StatusUp from './componets/statusUp'
-
+import FilterableProductTable from './componets/search'
 // 在使用我们的组件的时候 必须是首字母大写 这样是为了让react知道 是HTML的元素
 // 还是我们自定义的组件类 如果不大写 那么react是没办法认识的 所以也就得不到我们想要的结果
+
+// 用来模拟后端返回的列表
+const products = [{
+  category: "Sporting Goods",
+  price: "$49.99",
+  stocked: true,
+  name: "Football"
+}, {
+  category: "Sporting Goods",
+  price: "$9.99",
+  stocked: true,
+  name: "Baseball"
+}, {
+  category: "Sporting Goods", 
+  price: "$29.99", 
+  stocked: false, 
+  name: "Basketball"
+}, {
+  category: "Electronics", 
+  price: "$99.99", 
+  stocked: true, 
+  name: "iPod Touch"
+}, {
+  category: "Electronics",
+  price: "$399.99",
+  stocked: false,
+  name: "iPhone 5"
+}, {
+  category: "Electronics",
+  price: "$199.99",
+  stocked: true,
+  name: "Nexus 7"
+}];
 class App extends Component {
   constructor(props) {
     super(props)
@@ -70,6 +103,8 @@ class App extends Component {
         <NameForm />
         <hr/>
         <StatusUp scale="c"/>
+        <hr/>
+        <FilterableProductTable products={products}/>
       </div>
     );
   }
