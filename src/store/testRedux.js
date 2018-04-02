@@ -41,3 +41,20 @@ store.dispatch({ type: 'DECREMENT' })
 // 你应该把要做的修改变成一个普通对象，这个对象被叫做 action，而不是直接修改 state
 // 然后编写专门的函数来决定每个 action 如何改变应用的 state，这个函数被叫做 reducer
 // 这里需要注意的是 以前的flux是支持多个store的 但是redux只允许有一个数据池
+
+// 比如我们使用普通对象来描述应用的状态state的时候 例如todo应用的state可能是下面这样
+{
+  todos: [{
+    text: 'eat food',
+    completed: true
+  }, {
+    text: 'exercise',
+    completed: false
+  }],
+  visibilityFilter: 'SHOW_COMPLETED'
+}
+// 要想更新 state 中的数据，你需要发起一个 action
+// Action 就是一个普通 JavaScript 对象 用来描述发生了什么
+{ type: 'ADD_TODO', text: 'Go to Swimming pool' }
+{ type: 'TOGGLE_TODO', index: 1 }
+{ type: 'SET_VISIBILITY_FILTER', filter: 'SHOW_ALL' }
