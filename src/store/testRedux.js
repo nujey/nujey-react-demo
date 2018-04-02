@@ -58,3 +58,34 @@ store.dispatch({ type: 'DECREMENT' })
 { type: 'ADD_TODO', text: 'Go to Swimming pool' }
 { type: 'TOGGLE_TODO', index: 1 }
 { type: 'SET_VISIBILITY_FILTER', filter: 'SHOW_ALL' }
+
+// action就像是描述发生了什么的暗示器 最终 用reducer把axtion和state串起来
+function visibilityFilter(state = 'SHOW_ALL', action) {
+  if (action.type === 'SET_VISIBILITY_FILTER') {
+    return action.filter
+  } else {
+    return state
+  }
+}
+function todos(state = [], action) {
+  switch (action.type) {
+    case 'ADD_TODO':
+      return state.concat([{ text: action.text, completed: false }]);
+    case 'TOGGLE_TODO':
+      return state.map((todo, index) => {
+        action.index === index ?
+          { text: action.text, completed: !todo.completed} : 
+          todo
+      })
+    default:
+      return state;
+  }
+}
+
+// 如果我们再开发一个reducer的话 那就很完美了 调用之前的两个reduxer
+function todoApp( state = {}, action) {
+  return {
+    todos: todos(state.todos, action),
+    visibilityFilter: visibilityFilter(state.visibilityFilter, action)
+  }
+}
