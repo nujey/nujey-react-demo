@@ -68,6 +68,12 @@ const boundCompleteTodo = index => dispatch(completeTodo(index))
 // 然后可以调用它们
  boundAddTodo(text)
  boundCompleteTodo(index)
+
+
+
+ /**
+  * Flux中的action 一般每一个action创建函数都会触发一次dispatch
+ */
 // 在传统的flux中 当调用action创建函数的时候 一般会触发一个dispatch
 function addTodoWithDispatch(text) {
   const action = {
