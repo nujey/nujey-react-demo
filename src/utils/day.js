@@ -7,9 +7,9 @@ function laterDay(number) {
 }
 class TimeDay {
   // 获取当前时间往后七天 格式为几月几号
-  laterSenvenDay() {
+  laterSenvenDay(n) {
     const arrayDay = []
-    for(let i = 0; i < 7; i++) {
+    for(let i = 0; i < n; i++) {
       arrayDay.push(laterDay(i))
     }
     return arrayDay
