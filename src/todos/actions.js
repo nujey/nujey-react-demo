@@ -70,7 +70,14 @@ const boundCompleteTodo = index => dispatch(completeTodo(index))
  boundCompleteTodo(index)
 
 
-
+function addTodo(text) {
+  return {
+    type: ADD_TODO,
+    text
+  }
+}
+dispatch(addTodo(text))
+dispatch(completeTodo(index))
  /**
   * Flux中的action 一般每一个action创建函数都会触发一次dispatch
  */
