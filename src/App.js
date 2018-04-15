@@ -89,7 +89,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <h2>=====这里是一个组件分界线=====</h2>
+        <h2>=====这里是一个组件分界线1=====</h2>
         <ClickCounter onUpdate={ this.onCounterUpdate } num={1} />
         <h2>=====这里是一个组件分界线=====</h2>
         <Login />
