@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-
+import axios from 'axios'
+import { stringFunction } from '../mock/mocker'
 // 使用ES6语法来创建一个组件类
 // 父类是Component
 class ClickCounter extends Component {
@@ -29,7 +30,10 @@ class ClickCounter extends Component {
     // 这里必须使用this.setState函数来改变state的值
     // 如果直接对this.state.num进行运算的话 那么是不会驱动组件进行重新渲染的
     // this.setState({ num: this.state.num + 1 });
-
+    console.log(stringFunction())
+    axios.get('http://www.zhangfeng.com/api/mockData').then((res) => {
+      console.log(res.data)
+    })
     this.updateCount(true)
   }
   // 减法
