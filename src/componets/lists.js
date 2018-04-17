@@ -10,7 +10,7 @@ class Lists extends React.Component {
   render() {
     const listArr = this.props.listArray
     const listItems = listArr.map((item) =>
-      <p key={item.age}>{item.name}</p>
+      <p key={item.age}>{item.age}~{item.name}</p>
     )
     return (
       <div>

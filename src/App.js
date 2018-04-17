@@ -15,6 +15,7 @@ import FilterableProductTable from './componets/search'
 import Refs from './componets/refs'
 import GrandParent from './componets/parentRef'
 import Unique from './componets/unique'
+import ObjArr from './test/objarr'
 // 在使用我们的组件的时候 必须是首字母大写 这样是为了让react知道 是HTML的元素
 // 还是我们自定义的组件类 如果不大写 那么react是没办法认识的 所以也就得不到我们想要的结果
 
@@ -24,31 +25,6 @@ const products = [{
   price: "$49.99",
   stocked: true,
   name: "Football"
-}, {
-  category: "Sporting Goods",
-  price: "$9.99",
-  stocked: true,
-  name: "Baseball"
-}, {
-  category: "Sporting Goods", 
-  price: "$29.99", 
-  stocked: false, 
-  name: "Basketball"
-}, {
-  category: "Electronics", 
-  price: "$99.99", 
-  stocked: true, 
-  name: "iPod Touch"
-}, {
-  category: "Electronics",
-  price: "$399.99",
-  stocked: false,
-  name: "iPhone 5"
-}, {
-  category: "Electronics",
-  price: "$199.99",
-  stocked: true,
-  name: "Nexus 7"
 }];
 class App extends Component {
   constructor(props) {
@@ -97,7 +73,7 @@ class App extends Component {
         <Onetest name="中国"/>
         <h2>=====这里是一个组件分界线=====</h2>
         <Clock />
-        <h2>=====这里是一个组件分界线=====</h2>
+        <h2>=====222这里是一个组件分界线222=====</h2>
         <Lists listArray={this.state.testArray}/>
         <h2>=====这里是一个组件分界线=====</h2>
         <Blogs blogArray={this.state.testArray}/>
@@ -117,12 +93,8 @@ class App extends Component {
         <h2>=====这里是一个组件分界线=====</h2>
         <Unique />
         <h2>=====这里是一个组件分界线=====</h2>
-        <h2>=====这里是一个组件分界线=====</h2>
-        <h2>=====这里是一个组件分界线=====</h2>
-        <h2>=====这里是一个组件分界线=====</h2>
-        <h2>=====这里是一个组件分界线=====</h2>
-        <h2>=====这里是一个组件分界线=====</h2>
-        <h2>=====这里是一个组件分界线=====</h2>
+        <h2>=====这里是一个组件数组的排序去重=====</h2>
+        <ObjArr />
       </div>
     );
   }
