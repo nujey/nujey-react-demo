@@ -1,6 +1,7 @@
 import React from 'react'
 import { SubstringUrl } from "./urlSubstring";
 import ProtoTest from './prototypeTwo'
+import TimeMoment from './timeMoment'
 
 function compare(property) {
   return function(obj1, obj2) {
@@ -54,6 +55,8 @@ class ObjArr extends React.Component {
         <SubstringUrl />
         ==============================================<br/>
         <ProtoTest />
+        =====================时间插件=========================<br/>
+        <TimeMoment />
       </div>
     )
   }

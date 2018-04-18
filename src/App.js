@@ -16,6 +16,7 @@ import Refs from './componets/refs'
 import GrandParent from './componets/parentRef'
 import Unique from './componets/unique'
 import ObjArr from './test/objarr'
+import TimeMoment from './test/timeMoment'
 // 在使用我们的组件的时候 必须是首字母大写 这样是为了让react知道 是HTML的元素
 // 还是我们自定义的组件类 如果不大写 那么react是没办法认识的 所以也就得不到我们想要的结果
 
