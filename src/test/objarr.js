@@ -1,5 +1,6 @@
 import React from 'react'
 import { SubstringUrl } from "./urlSubstring";
+import ProtoTest from './prototypeTwo'
 
 function compare(property) {
   return function(obj1, obj2) {
@@ -51,6 +52,8 @@ class ObjArr extends React.Component {
         <button onClick={this.handleSort}>排序</button>
         ==============================================
         <SubstringUrl />
+        ==============================================<br/>
+        <ProtoTest />
       </div>
     )
   }

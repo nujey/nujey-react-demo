@@ -34,7 +34,7 @@ export class SubstringUrl extends React.Component {
     return (
       <div>
         {listItem ? listItem[0].name : 0}
-        <button onClick={this.handleUrl}>惦记我哦</button>
+        <button onClick={this.handleUrl}>惦记我哦对url进行处理哦</button>
       </div>
     )
   }
