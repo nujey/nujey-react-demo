@@ -1,7 +1,7 @@
 // react必须在作用域中
 import React from 'react'
 
-{/* <MyButton color="blue" shadowSize={2}>
+<MyButton color="blue" shadowSize={2}>
   click me
 </MyButton>
 
@@ -9,7 +9,7 @@ React.createElement(
   MyButton,
   {color: 'blue', shadowSize: 2},
   'clice me'
-) */}
+)
 // 对jsx使用点语法
 // 如果有一个单一模块 但却导出多个react组件的时候 这会很方便 比如：
 const MyComponents = {
