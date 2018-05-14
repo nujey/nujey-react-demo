@@ -18,6 +18,7 @@ import Unique from './componets/unique'
 import ObjArr from './test/objarr'
 import TimeMoment from './test/timeMoment'
 import Composition from './componets/composition'
+import Autofocus from './bestReact/refs'
 // 在使用我们的组件的时候 必须是首字母大写 这样是为了让react知道 是HTML的元素
 // 还是我们自定义的组件类 如果不大写 那么react是没办法认识的 所以也就得不到我们想要的结果
 
@@ -63,42 +64,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <h2>=====这里是一个组件分界线1=====</h2>
-        <ClickCounter onUpdate={ this.onCounterUpdate } num={1} />
-        <h2>=====这里是一个组件分界线=====</h2>
-        <Login />
-        <h2>=====这里是一个组件分界线=====</h2>
-        <Onetest name="中国"/>
-        <h2>=====这里是一个组件分界线=====</h2>
-        <Clock />
-        <h2>=====222这里是一个组件分界线222=====</h2>
-        <Lists listArray={this.state.testArray}/>
-        <h2>=====这里是一个组件分界线=====</h2>
-        <Blogs blogArray={this.state.testArray}/>
-        <h2>=====这里是一个组件分界线=====</h2>
-        <hr/>
-        <NameForm />
-        <hr/>
-        <StatusUp scale="c"/>
-        <hr/>
-        <FilterableProductTable products={products}/>
-        <hr/>
-        <h2>=====这里是一个组件分界线=====</h2>
-        <Refs name="张锋"/>
-        <GrandParent />
-        <h2>=====这里是一个组件分界线=====</h2>
-        <h2>=====这里是一个组件分界线=====</h2>
-        <h2>=====这里是一个组件分界线=====</h2>
-        <Unique />
-        <h2>=====这里是一个组件分界线=====</h2>
-        <h2>=====这里是一个组件数组的排序去重=====</h2>
-        <ObjArr />
-        <h2>=====Composition=====</h2>
-        <Composition />
+        <Autofocus />
       </div>
     );
   }
