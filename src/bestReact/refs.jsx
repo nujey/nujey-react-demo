@@ -50,6 +50,7 @@ function childInput(props) {
   )
 }
 class Autofocus extends React.Component {
+  handleClick = function() {}
   render() {
     return (
       <div>
