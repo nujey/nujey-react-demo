@@ -31,8 +31,8 @@ function HelloWorld() {
 }
 
 // 在根据不同的props 渲染不同的组件的时候
-不能使用一个普通的表达式作为react元素类型
-如果想使用表达式来表示元素类型的时候需要赋值给大写的变量 比如：
+// 不能使用一个普通的表达式作为react元素类型
+// 如果想使用表达式来表示元素类型的时候需要赋值给大写的变量 比如：
 import { PhotoStory, VideoStory } from './stories'
 const components = {
   photo: PhotoStory,
@@ -44,9 +44,9 @@ function Story(props) {
   return <SpecificStory story={props.storyType} />
 }
 
-jsx中的props属性
+// jsx中的props属性
   // 1. 可以传递一个用{}包裹的js表达式
-  <MyComponents foo={ 1 + 2 + 3 + 4 } />
+  // <MyComponents foo={ 1 + 2 + 3 + 4 } />
 
 
   // 2. if和for循环代码块 不是表达式 不能再jsx中直接使用 但是可以放在附近的代码块中
@@ -62,8 +62,8 @@ jsx中的props属性
 
 
   // 3. props不传值的时候 默认为true
-  <MyComponents autoCom />
-  <MyComponents autoCom={true} />
+  // <MyComponents autoCom />
+  // <MyComponents autoCom={true} />
 
   // 4.props可以进行属性扩展
   function app1() {
