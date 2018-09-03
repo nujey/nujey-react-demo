@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
-import logo from './assets/images/logo.svg';
+// import logo from './assets/images/logo.svg';
 import './assets/css/App.css';
 
 // 引入我们的第一个组件
-import ClickCounter from './componets/clickCounter';
-import Login from './componets/login'
-import Onetest from './componets/oneTest'
-import Clock from './componets/newDate'
-import Lists from './componets/lists'
-import Blogs from './componets/keys'
-import NameForm from './componets/forms'
-import StatusUp from './componets/statusUp'
-import FilterableProductTable from './componets/search'
-import Refs from './componets/refs'
-import GrandParent from './componets/parentRef'
-import Unique from './componets/unique'
-import ObjArr from './test/objarr'
-import TimeMoment from './test/timeMoment'
-import Composition from './componets/composition'
+// import ClickCounter from './componets/clickCounter';
+// import Login from './componets/login'
+// import Onetest from './componets/oneTest'
+// import Clock from './componets/newDate'
+// import Lists from './componets/lists'
+// import Blogs from './componets/keys'
+// import NameForm from './componets/forms'
+// import StatusUp from './componets/statusUp'
+// import FilterableProductTable from './componets/search'
+// import Refs from './componets/refs'
+// import GrandParent from './componets/parentRef'
+// import Unique from './componets/unique'
+// import ObjArr from './test/objarr'
+// import TimeMoment from './test/timeMoment'
+// import Composition from './componets/composition'
 import Autofocus from './bestReact/refs'
 // 在使用我们的组件的时候 必须是首字母大写 这样是为了让react知道 是HTML的元素
 // 还是我们自定义的组件类 如果不大写 那么react是没办法认识的 所以也就得不到我们想要的结果
@@ -64,7 +64,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Autofocus />
+       <input type="number" width="100px;" height=""/>
       </div>
     );
   }
